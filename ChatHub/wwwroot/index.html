@@ -22,7 +22,7 @@
             .withUrl("/chat")
             .build();
         let userName = "";
-        hubConnection.on("Send", function (message, userName) {
+        hubConnection.on("Send", function (message,  userName) {
             let userNameElem = document.createElement("b");
             userNameElem.appendChilddocument(document.createTextNode(userName + ':'));
 
